@@ -133,7 +133,7 @@ struct SerializationExtensionTests {
         let key = "dateKey"
 
         try genericTest(key: key) { _ in
-            Date.now.addingTimeInterval(-TimeInterval.random(in: 0..<(3600 * 24 * 365 * 10)))            
+            Date().addingTimeInterval(-TimeInterval.random(in: 0..<(3600 * 24 * 365 * 10)))            
         }
     }
 
